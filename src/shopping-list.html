@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>LitBook - Shopping List</title>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./shopping-list.css"/>
+</head>
+<body>
+    <!--header-->
+    <load src="./partials/header.html"/>
+    <!--header-->
+
+    <section class="section-shop-list">
+    <div class="box-shop container">
+        <!--support--> 
+        <div class="support-wrapper">
+            <div class="support-title">
+            <span class="support-paragraph">Support Ukraine</span>
+            <svg class="ukraine-emblem" width="20" height="32">
+                <use href="../img/sprite.svg#ukraine"></use>
+            </svg>
+            </div>
+            <div class="swiper-container">
+            <div class="swiper">
+                <div class="swiper-wrapper "> </div>
+            </div>
+            </div>
+            <button class="support-swiper-btn" type="button" aria-label="Scroll more funds">
+            <svg class="swiper-button-icon">
+                <use href="../img/sprite.svg#swiper"></use>
+            </svg>
+            </button> 
+        </div>
+        <!--support-->
+        <div class="content-shop">
+            <h1 class="title-shop">Shopping <em class="blue">List</em></h1>
+            <div class="bx-shp">
+                <ul class="shop-list-bk"></ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    
+    <script type="module" src="./shopping-list.js"></script>
+    <script type="module" src="./js/header.js"></script>
+    <script type="module" src="./js/support-ukraine.js"></script>
+</body>
+</html>

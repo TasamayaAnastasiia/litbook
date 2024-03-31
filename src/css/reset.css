@@ -1,3 +1,10 @@
+@import url('./header.css');
+@import url('./sign-up.css');
+@import url('./burger-menu.css');
+@import url('./support-ukraine.css');
+@import url('./home.css');
+@import url('./modal.css');
+
 /* Reset styles */
 h1,
 h2,
@@ -12,11 +19,17 @@ p {
 p:last-child {
   margin-bottom: 0;
 }
+* {
+  box-sizing: border-box;
+}
 
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+body {
+  margin: 0;
 }
 
 a {
@@ -32,4 +45,21 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.container {
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    min-width: 1440px;
+    padding: 0 24px;
+  }
 }

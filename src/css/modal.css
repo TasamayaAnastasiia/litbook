@@ -1,0 +1,120 @@
+.box-modal-window {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(93, 89, 89, 0.5);
+}
+.icon-link {
+    filter: saturate(0%);
+}
+.icon-link:hover {
+    filter: saturate(100%);
+}
+.content-box-for-modal {
+    border: 2px solid black;
+    border-radius: 18px;
+    width: 579px;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    background-color: white;
+    position: relative;
+    transform: translate(80%, 20%);
+    padding: 24px 24px 40px 40px;
+}
+.image-modal {
+    border-radius: 8px;
+    width: 192px;
+    height: 281px;
+}
+.close {
+    position: absolute;
+    left: 534px;
+}
+.box-congrat {
+    display: flex;
+    justify-content: center;
+}
+.text-congrat {
+    font-family: "DM Sans", sans-serif;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: rgba(17, 17, 17, 0.5);
+    text-align: center;
+    width: 324px;
+}
+.close:hover {
+    stroke: #4f2ee8;
+    cursor: pointer;
+}
+.button-for-shop {
+    border: 2px solid #4f2ee8;
+    border-radius: 40px;
+    width: 499px;
+    height: 64px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: white;
+    line-height: 133%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: black;
+    transition: background-color 350ms linear;
+    transition: color 350ms linear;
+    margin-top: 40px;
+}
+.button-for-shop:hover {
+    background-color: #4f2ee8;
+    color: white;
+}
+.thumb-mdl-inf {
+    display: flex;
+    flex-direction: row;
+    padding-top: 9px;
+}
+.title {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    width: 250px;
+    line-height: 117%;
+    letter-spacing: -0.04em;
+    color: black;
+}
+.text-inf {
+    margin-left: 24px;
+}
+.author {
+    font-family: "DM Sans", sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: #b4afaf;
+    margin-top: 8px;
+}
+.description {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.04em;
+    color: var(--black);
+    margin-top: 20px;
+}
+.list-links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 20px;
+    align-items: center;
+}

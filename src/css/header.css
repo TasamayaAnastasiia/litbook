@@ -1,21 +1,106 @@
-.header {
-  padding: 20px 0;
+.box-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1.5px solid black;
+    border-radius: 0 0 8px 8px;
+}
+.circle-amount {
+    background-color: red;
+    border-radius: 50%;
+    width: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 105px;
+    font-size: 10px;
+    top: 2px;
+    color: white;
+    height: 12px;
+}
+.logo-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 20px 0;
+}
+.icon-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+.switch {
+    display: flex;
+}
+.shop-list {
+    position: relative;
+}
+.switcher {
+    position: relative;
+    cursor: pointer;
+}
+.circle {
+    position: absolute;
+    transition: transform 250ms;
+    transform: translateX(-10%) translateY(8.5%);
+}
+.action {
+    transform: translateX(75%) translateY(8.5%);
+}
+.home-and-shop {
+    display: none;
 }
 
-.nav-list {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+@media screen and (min-width: 768px) {
+    .home-and-shop {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 24px;
+    }
+    .shop-list {
+        display: flex;
+        align-items: center;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;
+        transition: background-color 1000ms ease-in-out;
+        letter-spacing: -0.04em;
+    }
+    .shop-list:hover {
+        background-color: #eac645;
+        border-radius: 36px;
+        padding: 8px 16px;
+        font-weight: 700;
+    }
+    .shop-list:hover .home {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 129%;
+        letter-spacing: -0.04em;
+    }
+    .shop-list:hover .circle-amount {
+        left: 125px;
+        top: 8px;
+    }
+    .header-thumb {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .yellow-draw {
+        background-color: #eac645;
+        border-radius: 36px;
+        padding: 8px 16px;
+        font-weight: 700;
+    }
 }
-
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+@media screen and (min-width: 1440px) {
+    .header-thumb {
+        gap: 76px;
+    }
 }
